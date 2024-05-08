@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt.Core", "Jwt.Core\Jwt.Core.csproj", "{6B1E8819-706D-4B0D-A94A-AAF07C2F675D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt.Infra", "Jwt.Infra\Jwt.Infra.csproj", "{6DC9F0BB-5A90-4764-91F1-78480B8D8BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt.Api", "Jwt.Api\Jwt.Api.csproj", "{F84B4719-14CD-469B-885C-2C8F2A9BC527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B1E8819-706D-4B0D-A94A-AAF07C2F675D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1E8819-706D-4B0D-A94A-AAF07C2F675D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1E8819-706D-4B0D-A94A-AAF07C2F675D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1E8819-706D-4B0D-A94A-AAF07C2F675D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DC9F0BB-5A90-4764-91F1-78480B8D8BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC9F0BB-5A90-4764-91F1-78480B8D8BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC9F0BB-5A90-4764-91F1-78480B8D8BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DC9F0BB-5A90-4764-91F1-78480B8D8BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84B4719-14CD-469B-885C-2C8F2A9BC527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84B4719-14CD-469B-885C-2C8F2A9BC527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84B4719-14CD-469B-885C-2C8F2A9BC527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84B4719-14CD-469B-885C-2C8F2A9BC527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D497741F-2CE9-4538-B068-A17353CF9C4C}
+	EndGlobalSection
+EndGlobal
