@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using System.Net;
 
 namespace Jwt.Api.Extensions;
 public static class AccountContextExtension
@@ -33,10 +34,10 @@ public static class AccountContextExtension
         #region Criação
 
         app.MapPost("api/v1/users", async (
-            Jwt.Core.Contexts.AccountContext.UseCases.Create.Request request,
-            IRequestHandler<
-                Jwt.Core.Contexts.AccountContext.UseCases.Create.Request,
-                Jwt.Core.Contexts.AccountContext.UseCases.Create.Response> handler) =>
+             Jwt.Core.Contexts.AccountContext.UseCases.Create.Request request,
+             IRequestHandler<
+                 Jwt.Core.Contexts.AccountContext.UseCases.Create.Request,
+                 Jwt.Core.Contexts.AccountContext.UseCases.Create.Response> handler) =>
         {
             var result = await handler.Handle(request, new CancellationToken());
             return result.IsSuccess
@@ -59,12 +60,12 @@ public static class AccountContextExtension
                 return Results.Json(result, statusCode: result.Status);
 
             if (result.Data is null)
-                return Results.Json(result, statusCode: 500);
+                return Results.Json(result, statusCode: (int)HttpStatusCode.InternalServerError);
 
             result.Data.Token = JwtExtension.Generate(result.Data);
             return Results.Ok(result);
-        });
 
+        });
         #endregion
     }
 }
